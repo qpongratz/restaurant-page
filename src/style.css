@@ -1,12 +1,35 @@
+:root {
+  /* Colors */
+  --yellow: #F9E784;
+  --taupe: #896A67;
+  --black: #13070C;
+  --eggplant: #6B4D57;
+  --blue: #AFC2D5;
+  --primary-background-color: var(--yellow);
+  --primary-font-color: var(--black);
+
+
+
+}
+
 div {
   outline: 1px black solid;
 }
 html {
   height: 100%;
+  color: var(--black);
 }
 
 body {
-  background-image: url('./images/nachos-background.jpg');
+  background-image: url('https://images.pexels.com/photos/6400006/pexels-photo-6400006.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 20rem 1fr;
+}
+
+.card {
+  background-color: var(--primary-background-color);
+  width: 100%;
+  grid-column-start: 2;
 }
