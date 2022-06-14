@@ -1,0 +1,1 @@
+(()=>{"use strict";document.getElementById("content").innerText="Hello, World!"})();
