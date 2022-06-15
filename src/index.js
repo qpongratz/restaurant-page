@@ -1,7 +1,9 @@
 import './style.scss';
+import navBar from './navBar';
 import homeTab from './homeTab';
 import menuTab from './menuTab';
-import navBar from './navBar';
+import contactTab from './contactTab';
+import aboutTab from './aboutTab';
 
 const content = document.getElementById('content');
 content.classList.add('card');
