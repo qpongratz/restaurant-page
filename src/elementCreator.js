@@ -5,7 +5,7 @@ const createElement = (tag, text = '', cssClass = false) => {
   return element;
 }
 
-const createList = (ordered = false, listItems) => {
+const createList = (listItems, ordered = false) => {
   const tag = (ordered) ? 'ol' : 'ul';
   const list = domElement(tag);
   listItems.forEach( element => {

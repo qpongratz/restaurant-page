@@ -16,6 +16,6 @@ export default function homeTab() {
     'If you order nachos to share, one person can\'t just eat all of the fully loaded nachos. Basically, if two people order nachos to share, one person can\'t take the ones with meat and stuff.'
   ];
 
-  content.appendChild(createList(false, rules));
+  content.appendChild(createList(rules));
 
 }
