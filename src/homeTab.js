@@ -1,10 +1,9 @@
-import {createElement, createList} from elementCreator
+import {createElement, createList} from './elementCreator'
 
 export default function homeTab() {
   const content = document.getElementById('content');
   content.classList.add('card');
 
-  content.appendChild(createElement('button', 'Press me', 'nacho-button'));
   content.appendChild(createElement('div', '', 'banner'))
   content.appendChild(createElement('h1', 'Midwest Marty\'s Fully Loaded Nacho Emporium', 'restaurant_name'));
   content.appendChild(createElement('h2', 'Welcome!'))
