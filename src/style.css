@@ -21,7 +21,7 @@ html {
 }
 
 body {
-  background-image: url('https://images.pexels.com/photos/6400006/pexels-photo-6400006.jpeg');
+  background-image: url('./images/nachos-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
