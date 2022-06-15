@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'Abel';
+  src: url('./fonts/Abel-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Fascinate';
+  src: url('./fonts/FascinateInline-Regular.ttf') format('truetype');
+}
+
 :root {
   /* Colors */
   --yellow: #F9E784;
@@ -7,6 +16,7 @@
   --blue: #AFC2D5;
   --primary-background-color: var(--yellow);
   --primary-font-color: var(--black);
+  font-family: Abel, sans-serif;
 }
 
 * {
@@ -18,7 +28,9 @@ html {
   color: var(--black);
 }
 
+
 .nacho-button {
+  font-family: Abel, sans-serif;
   background-image: url('./images/nacho-transparent.png');
   background-color: transparent;
   background-size: contain;
@@ -29,7 +41,8 @@ html {
   transform: translateY(-45%);
   transition: ease-in-out .5s;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     transform: translateY(-5%);
   }
 }
