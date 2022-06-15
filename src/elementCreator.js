@@ -1,7 +1,8 @@
-const createElement = (tag, text = '', cssClass = false) => {
+const createElement = (tag, text = '', cssId = false, cssClass = false) => {
   const element = document.createElement(tag);
   element.innerText = text;
-  if (cssClass) { element.classList.add(cssClass) }
+  if (cssId) { element.setAttribute('id', cssId) };
+  if (cssClass) { element.classList.add(cssClass) };
   return element;
 }
 
