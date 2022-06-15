@@ -49,6 +49,7 @@ h1 {
   aspect-ratio: 1/1;
   transform: translateY(-40%);
   transition: ease-in-out .5s;
+  border-radius: 49% 51% 49% 51% / 12% 11% 89% 88%;
 
   &:hover,
   &:focus-visible {
