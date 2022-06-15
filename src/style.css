@@ -7,14 +7,12 @@
   --blue: #AFC2D5;
   --primary-background-color: var(--yellow);
   --primary-font-color: var(--black);
-
-
-
 }
 
-div {
-  outline: 1px black solid;
+* {
+  box-sizing: border-box;
 }
+
 html {
   height: 100%;
   color: var(--black);
@@ -24,12 +22,27 @@ body {
   background-image: url('./images/nachos-background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  display: grid;
-  grid-template-columns: 1fr 20rem 1fr;
+  padding: 0;
+  margin: 0;
 }
 
 .card {
   background-color: var(--primary-background-color);
   width: 100%;
   grid-column-start: 2;
+  margin-block: 2rem;
+  min-height: 20rem;
+  padding: 1rem;
+  border: .4rem var(--eggplant) solid;
+}
+
+@media (min-width: 600px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 600px 1fr;
+  }
+
+  .card {
+    border-radius: 1rem;
+  }
 }
