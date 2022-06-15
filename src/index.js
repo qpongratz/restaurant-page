@@ -1,6 +1,6 @@
 import './style.scss';
 import homeTab from './homeTab';
-import header from './header';
+import navBar from './navBar';
 
-header();
+navBar();
 homeTab();
