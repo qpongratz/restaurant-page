@@ -7,9 +7,9 @@ const createElement = (tag, text = '', cssClass = false) => {
 
 const createList = (listItems, ordered = false) => {
   const tag = (ordered) ? 'ol' : 'ul';
-  const list = domElement(tag);
+  const list = createElement(tag);
   listItems.forEach( element => {
-    const listItem = domElement('li', element);
+    const listItem = createElement('li', element);
     list.appendChild(listItem);
   });
   return list;
