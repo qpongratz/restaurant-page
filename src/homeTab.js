@@ -1,4 +1,5 @@
 import Enjoyment from './images/enjoyment.jpg';
+import Nacho from './images/nacho-transparent.png';
 
 export default function homeTab() {
   const content = document.getElementById('content');
@@ -17,14 +18,16 @@ export default function homeTab() {
 
   const addImageToContent = (name, cssClass = false) => {
     let image = new Image();
-    image.src = Enjoyment;
+    image.src = name;
     if (cssClass) { image.classList.add(cssClass) }
     content.appendChild(image);
   }
+  addTextToContent('button', 'Press me', 'nacho-button');
 
   addTextToContent('h1', 'Fully Loaded Nacho Emporium', 'restaurant_name')
   addTextToContent('p', 'Come on down to the Fully Loaded Nacho Emporium. The only family-friendly, fully-loaded, nacho establishment in the greater metropolitan area that doesn\'t require you to be Fully Loaded')
   addTextToContent('p', 'Added by function');
   addImageToContent(Enjoyment);
+  addImageToContent(Nacho);
 
 }

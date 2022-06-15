@@ -18,6 +18,21 @@ html {
   color: var(--black);
 }
 
+.nacho-button {
+  background-image: url('./images/nacho-transparent.png');
+  background-color: transparent;
+  background-size: contain;
+  border: none;
+  aspect-ratio: 1/1;
+  padding: 3rem;
+  transform: translateY(-80%);
+  transition: ease-in-out .5s;
+}
+
+.nacho-button:hover {
+  transform: translateY(-45%);
+}
+
 body {
   background-image: url('./images/nachos-background.jpg');
   background-size: cover;
