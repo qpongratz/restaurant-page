@@ -28,9 +28,18 @@ html {
   color: var(--black);
 }
 
+h1, h2 {
+  text-align: center;
+}
+
+h1 {
+  font-family: Fascinate, serif;
+  font-size: 3rem;
+}
 
 .nacho-button {
   font-family: Abel, sans-serif;
+  font-weight: bold;
   background-image: url('./images/nacho-transparent.png');
   background-color: transparent;
   background-size: contain;
@@ -38,7 +47,7 @@ html {
   flex: 1 1 0;
   font-size: 1.2rem;
   aspect-ratio: 1/1;
-  transform: translateY(-45%);
+  transform: translateY(-40%);
   transition: ease-in-out .5s;
 
   &:hover,
