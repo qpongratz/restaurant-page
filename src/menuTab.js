@@ -19,6 +19,7 @@ export default function homeTab(content) {
   menuItems.push(new MenuItem('The Fully-Loaded Nacho Bowl', RiceBowl, 'Sometimes you want the taste of the nachos, but without the investment of a full platter. We have you covered with the bowl. A great way to get your nacho fix on the go.'));
   menuItems.push(new MenuItem('The Fully-Unloaded Nachos', Deconstructed, 'For those with a little more gumption than hunger, we offer this oppurtunity to construct your Fully-Loaded experience. Come in and enjoy a buffet bar of fixins where you can create the nachos that used to only exist in your dreams.'));
 
+  content.appendChild(createElement('h1', 'Our Menu'))
 
   menuItems.forEach( (element) => {
     const container = createElement('div', '', false, 'menu_item');
