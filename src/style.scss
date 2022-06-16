@@ -81,10 +81,10 @@ nav {
   background-color: var(--primary-background-color);
   width: 100%;
   grid-column-start: 2;
-  margin-block: 2rem;
+  margin-block: 2.5rem;
   min-height: 20rem;
   padding: 1rem;
-  border: .4rem var(--eggplant) solid;
+  border-block: .4rem var(--eggplant) solid;
 }
 
 .menu_item {
@@ -96,11 +96,17 @@ nav {
 @media (min-width: 600px) {
   body {
     display: grid;
-    grid-template-columns: 1fr 600px 1fr;
+    grid-template-columns: 1fr minmax(600px, 1fr) 1fr;
+    justify-items: center;
+  }
+
+  #nav-bar {
+    width: 600px;
   }
 
   .card {
     border-radius: 1rem;
+    border-inline: .4rem var(--eggplant) solid;
   }
 
   .menu_item {
@@ -111,7 +117,6 @@ nav {
     &_image {
       grid-row: span 2;
       place-self: center;
-      object-fit: contain;
     }
   }
 }
